@@ -15,7 +15,7 @@ namespace nameDBClass
 
         protected string RetMsg { get; set; }
 
-        public string dbHost = "192.168.1.21";//資料庫位址
+        public string dbHost = "192.168.1.21";//資料庫地址
         public string dbUser = "sa";//資料庫使用者帳號
         public string dbPass = "661ho728";//資料庫使用者密碼
         public string dbName = "test";//資料庫名稱
@@ -366,7 +366,7 @@ namespace nameDBClass
             string connStr;
 
             string CommStr = "", retstr = "";
-            int n = 0;
+            //int n = 0;
 
             //開始連線
             connStr = "server=" + dbHost + ";uid=" + dbUser + ";pwd=" + dbPass + ";database=" + dbName;
@@ -428,7 +428,7 @@ namespace nameDBClass
             string connStr;
 
             string retstr = "";
-            int n = 0;
+            //int n = 0;
 
             //開始連線
             connStr = "server=" + dbHost + ";uid=" + dbUser + ";pwd=" + dbPass + ";database=" + dbName;

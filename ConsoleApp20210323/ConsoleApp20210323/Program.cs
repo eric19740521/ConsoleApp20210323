@@ -27,12 +27,12 @@ namespace nameDBClass2
             db.dbPass = "661ho728";//資料庫使用者密碼
             db.dbName = "test";//資料庫名稱
 
-            //
+            //建立資料庫test01
             db.CreateDB();
             str=db.GetReturnMsg(); 
             Console.WriteLine(str);
 
-            //
+            //建立使用者帳號密碼 權限
             db.CreateUser();
             str = db.GetReturnMsg();
             Console.WriteLine(str);
